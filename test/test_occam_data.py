@@ -99,6 +99,7 @@ def test_occam_data_constructor_files():
 def test_occam_data_attributes():
     occam_data, fort1, fort7, xyz = _create_default_occam_data_object()
     _assert_all_attributes_present_and_equal(occam_data, fort1, fort7, xyz)
+    shutil.rmtree(class_dir)
 
 
 def test_occam_data_wrong_input():
